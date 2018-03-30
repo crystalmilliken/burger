@@ -1,0 +1,14 @@
+
+ li{
+    list-style: none;
+    padding-left:3em;
+}
+#titleBar{
+    text-align: center;
+}
+#titleBar img{
+    max-width: 200px;
+}
+.devourMeButtons{
+    margin-right: 0px;
+}

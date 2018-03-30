@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+        <div id="titleBar" class="col-12">
+            <img src="assets/images/hamburger.png" alt="hamburger">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4" id="notDevouredBurgers">
+            <ul>
+                {{#each burgers.notDevoured}}
+                <li>{{burger_name}}
+                    <button class="devourMeButtons" id={{id}} data-status="{{devoured}}">Devour Me</button>
+                </li>
+
+
+                {{/each}}
+            </ul>
+        </div>
+        <div id="submitDiv" class="col-4">
+            <input type="text" id="newBurger">
+            <button id="submit">Submit</button>
+        </div>
+        <div class="col-4">
+            <img src="assets/images/top.png" alt="">
+            <ul>
+                {{#each burgers.devoured}}
+                <li>{{burger_name}}</li>
+                {{/each}}
+            </ul>
+            <img src="assets/images/bottom.png" alt="">
+        </div>
+    </div>
+</div>
